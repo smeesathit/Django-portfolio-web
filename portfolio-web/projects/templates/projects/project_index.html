@@ -3,13 +3,13 @@
 {% extends "base.html" %}
 
 {% block page_content %}
-<h1>Projects</h1>
+<h1>ผลงาน</h1> <!--ผลงาน-->
 <div class="row">
 {% for project in projects %}
     <div class="col-md-4">
         <div class="card mb-2">
             {% if project.image %}
-                <img class="card-img-top" src="{{ project.image.url }}">
+                <img alt="{{ project.title }}" class="card-img-top" style="max-width: auto; height: 200px" src="{{ project.image.url }}"> <!--class="card-img-top" -->
             {% endif %}
             <div class="card-body">
                 <h5 class="card-title">{{ project.title }}</h5>

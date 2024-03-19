@@ -16,6 +16,9 @@
         <br>
         <h5>เทคโนโลยีที่ใช้:</h5>
         <p>{{ project.technology }}</p>
+        <a href="{% url 'project_index' %}" class="btn btn-primary">
+            กลับหน้าหลัก
+        </a>
     </div>
 </div>
 {% endblock page_content %}
